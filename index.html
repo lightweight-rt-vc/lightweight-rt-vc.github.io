@@ -12,8 +12,20 @@
       padding: 20px;
       line-height: 1.6;
     }
-    h1 {
-      text-align: center;
+    h1, h2 {
+      text-align: left;
+    }
+    .authors {
+      margin-top: 10px;
+      font-size: 1rem;
+    }
+    .affiliations {
+      margin-top: 5px;
+      font-size: 0.9rem;
+      color: #555;   /* subtle gray for secondary text */
+    }
+    .affiliations sup {
+      margin-right: 4px;
     }
     .audio-grid {
       display: flex;
@@ -54,8 +66,13 @@
         <h1>A Lightweight Real-Time Voice Conversion Framework<small> <a href="" target="_blank">[arXiv]</a> <a href="https://github.com/abargum/lightweight-rt-vc" target="_blank">[code]</a></small></h1>        
         <h2>With Improved Speaker Matching</h2>
     
-        <div id="authors">
-            Anders R. Bargum, Cumhur Erkut, Simon Lajboschitz and Stefania Serafin
+        <div class="authors">
+        Anders R. Bargum<sup>1,2</sup>, Cumhur Erkut<sup>1</sup>, Simon Lajboschitz<sup>2</sup>, and Stefania Sefafin<sup>1</sup>
+        </div>
+
+        <div class="affiliations">
+          <div><sup>1</sup> Aalborg University, Denmark</div>
+          <div><sup>2</sup> Khora & Heka VR, Denmark</div>
         </div>
 
         <h3 id="abstract">Abstract</h3>
