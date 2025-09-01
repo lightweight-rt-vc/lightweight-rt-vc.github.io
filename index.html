@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Audio Comparison Template</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+      line-height: 1.6;
+    }
+    h1 {
+      text-align: center;
+    }
+    .audio-grid {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      margin-top: 20px;
+    }
+    .audio-row {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 15px;
+      align-items: center;
+    }
+    .audio-cell {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      border: 1px solid #ddd;
+      padding: 10px;
+      box-sizing: border-box;
+    }
+    .audio-cell strong {
+      margin-bottom: 10px;
+      font-weight: normal;
+    }
+    .audio-cell audio {
+      width: 100%;
+    }
+    @media (max-width: 900px) {
+      .audio-row {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <h1>Audio Comparison</h1>
+
+  <!-- Table Header -->
+  <div class="audio-row">
+    <div class="audio-cell"><strong>Source</strong></div>
+    <div class="audio-cell"><strong>Target</strong></div>
+    <div class="audio-cell"><strong>Model 1</strong></div>
+    <div class="audio-cell"><strong>Model 2</strong></div>
+    <div class="audio-cell"><strong>Proposed</strong></div>
+  </div>
+
+  <!-- Example Row 1 -->
+  <div class="audio-row">
+    <div class="audio-cell">
+      <audio controls>
+        <source src="audio/source1.wav" type="audio/wav">
+      </audio>
+    </div>
+    <div class="audio-cell">
+      <audio controls>
+        <source src="audio/target1.wav" type="audio/wav">
+      </audio>
+    </div>
+    <div class="audio-cell">
+      <audio controls>
+        <source src="audio/model1_1.wav" type="audio/wav">
+      </audio>
+    </div>
+    <div class="audio-cell">
+      <audio controls>
+        <source src="audio/model2_1.wav" type="audio/wav">
+      </audio>
+    </div>
+    <div class="audio-cell">
+      <audio controls>
+        <source src="audio/proposed1.wav" type="audio/wav">
+      </audio>
+    </div>
+  </div>
+
+  <!-- Example Row 2 -->
+  <div class="audio-row">
+    <div class="audio-cell">
+      <audio controls>
+        <source src="audio/source2.wav" type="audio/wav">
+      </audio>
+    </div>
+    <div class="audio-cell">
+      <audio controls>
+        <source src="audio/target2.wav" type="audio/wav">
+      </audio>
+    </div>
+    <div class="audio-cell">
+      <audio controls>
+        <source src="audio/model1_2.wav" type="audio/wav">
+      </audio>
+    </div>
+    <div class="audio-cell">
+      <audio controls>
+        <source src="audio/model2_2.wav" type="audio/wav">
+      </audio>
+    </div>
+    <div class="audio-cell">
+      <audio controls>
+        <source src="audio/proposed2.wav" type="audio/wav">
+      </audio>
+    </div>
+  </div>
+
+  <!-- Add more rows as needed -->
+</body>
+</html>
