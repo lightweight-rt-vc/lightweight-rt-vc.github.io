@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Audio Comparison Template</title>
+  <title>Lightweight Voice Conversion</title>
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -50,6 +50,26 @@
   </style>
 </head>
 <body>
+  <div id="content">
+        <h1>A Lightweight Real-Time Voice Conversion Framework with Improved Speaker Matching<small> <a href="" target="_blank">[arXiv]</a> <a href="https://github.com/abargum/lightweight-rt-vc" target="_blank">[code]</a></small></h1>        
+        
+        <div id="authors">
+            Anders R. Bargum, Cumhur Erkut, Simon Lajboschitz and Stefania Serafin
+        </div>
+
+        <h3 id="abstract">Abstract</h3>
+
+        <p>Recent advancements in speech generation and speech representation learning have facilitated the development of real-time, streamable voice conversion systems.
+          While these systems achieve synthesis quality and linguistic consistency comparable to state-of-the-art offline models, they often fall short in maintaining speaker similarity, particularly for unseen speakers i.e. in zero-shot scenarios.
+          In this work, we propose a novel real-time voice conversion pipeline designed to enhance target speaker matching.
+          Our approach leverages dynamic speaker embeddings and speaker information disentanglement through information perturbation.
+          Operating under low-latency and lightweight causal inference constraints, our model preserves input prosody and linguistic content.
+          Experimental results, based on both objective and subjective evaluations, demonstrate improved speaker matching compared to existing solutions.</p>
+
+        <br>
+        <img src="overall_pipeline.png" alt="Pipeline Diagram" class="pipeline-image">
+        <br>
+  </div>
   <h1>Audio Comparison</h1>
 
   <!-- Table Header -->
